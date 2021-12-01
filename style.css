@@ -130,6 +130,50 @@ a {
     padding: 5px 30px;
 } */
 
+button {
+    display: inline-block;
+    background-color: #aa7c25;
+    border-radius: 10px;
+    border: 4px double #cccccc;
+    color: #eeeeee;
+    text-align: center;
+    font-size: 15px;
+    padding: 5px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+button:hover {
+    background-color: #eccdaa;
+}
+
+button:hover span {
+    padding-right: 25px;
+}
+
+button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
 .banner {
     background-image: url('bg.jpg');
     background-size: cover;
@@ -303,32 +347,54 @@ section {
     text-align: center;
 }
 
-.html {
-    width: 85%;
+.zoom:hover {
+    transform: scale(1.08);
 }
 
-.css {
+.vs {
+    width: 90%;
+}
+
+.jp {
     width: 70%;
 }
 
-.javascript {
-    width: 50%;
+.fg {
+    width: 90%;
 }
 
-.php {
-    width: 45%;
+.of {
+    width: 90%;
 }
 
-.Jv {
-    width: 60%;
+.pt {
+    width: 65%;
 }
 
-.lara {
-    width: 25%;
+.ar {
+    width: 70%;
 }
 
 .adob {
-    width: 65%;
+    width: 50%;
+}
+
+.col-6 {
+    width: 50%;
+    box-sizing: border-box;
+    float: left;
+    margin-top: 20px;
+}
+
+.desain img {
+    max-width: 80%;
+    height: auto;
+}
+
+.tengah {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 .col-4 {
@@ -339,8 +405,9 @@ section {
 }
 
 .col-4 .karya {
-    margin: 1px;
     padding: 10px 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .col-4 .karya a {
@@ -348,7 +415,6 @@ section {
 }
 
 .karya .link {
-    text-align: center;
     font-family: 'Exo 2', sans-serif;
     color: rgb(99, 99, 99);
     border-bottom: 1px solid;
@@ -363,7 +429,7 @@ section {
     padding-top: 10px;
     width: 100%;
     letter-spacing: 1px;
-    font-family: 'Exo 2', sans-serif;
+    /* font-family: 'Exo 2', sans-serif; */
     color: rgb(48, 48, 48);
 }
 
@@ -394,7 +460,7 @@ section {
 
 #creation {
     padding-bottom: 80px;
-    background-color: rgba(226, 224, 224, 0.664);
+    background-color: white;
 }
 
 
